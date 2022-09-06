@@ -5,7 +5,7 @@ import { FooterComponent } from './main/footer/footer.component';
 import { HeaderComponent } from './main/header/header.component';
 import { SidebarComponent } from './main/sidebar/sidebar.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -17,7 +17,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     PageNotFoundComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports:[
     SidebarComponent
