@@ -1,41 +1,260 @@
 <h2>Modificar Datos del Asegurado</h2>
 <form action="">
-    <mat-tab-group [ngStyle]="{'overflow': 'hidden' }" mat-align-tabs="center">
+    <mat-tab-group mat-align-tabs="left" dynamicHeight>
         <mat-tab  label="Datos Persona Fisica">
-            <div class="row mb-2">
-                <div class="col-md-3">
-                    <label for="aPat" class="form-label col-form-label-sm">Apellido Paterno</label>
-                    <input type="text" class="form-control form-control-sm" id="aPat">
+            <div class="row mt-4">
+                <div class="col-md-2 col-sm-12">
+                    <p>Datos Personales</p>
                 </div>
-                <div class="col-md-3">
-                    <label for="aMat" class="form-label col-form-label-sm">Apellido Materno</label>
-                    <input type="text" class="form-control form-control-sm" id="aMat">
-                </div>
-                <div class="col-md-6">
-                    <label for="aPat" class="form-label col-form-label-sm">Nombre(s)</label>
-                    <input type="text" class="form-control form-control-sm" id="aPat">
+                <div class="col-md-10 col-sm-12">
+                    <div class="row mb-2">
+                        <div class="col-md-4 col-sm-12">
+                            <label for="aPat" class="form-label col-form-label col-form-label-sm">Apellido Paterno</label>
+                            <input type="text" class="form-control form-control-sm" id="aPat">
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <label for="aMat" class="form-label col-form-label col-form-label-sm">Apellido Materno</label>
+                            <input type="text" class="form-control form-control-sm" id="aMat">
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <label for="aPat" class="form-label col-form-label col-form-label-sm">Nombre(s)</label>
+                            <input type="text" class="form-control form-control-sm" id="aPat">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-4 col-sm-12">
+                            <label for="aPat" class="form-label col-form-label col-form-label-sm">R.F.C.</label>
+                            <input type="text" class="form-control form-control-sm" id="aPat">
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <label for="aMat" class="form-label col-form-label col-form-label-sm">C.U.R.P.</label>
+                            <input type="text" class="form-control form-control-sm" id="aMat">
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <label for="aPat" class="form-label col-form-label col-form-label-sm">Teléfono</label>
+                            <input type="text" class="form-control form-control-sm" id="aPat">
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <label for="aMat" class="form-label col-form-label col-form-label-sm">Correo Electrónico</label>
+                            <input type="text" class="form-control form-control-sm" id="aMat">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row mb-2">
-                <div class="col-md-3">
-                    <label for="aPat" class="form-label col-form-label-sm">R.F.C.</label>
-                    <input type="text" class="form-control form-control-sm" id="aPat">
+            <hr>
+            <div class="row">
+                <div class="col-md-2 col-sm-12">
+                    <p>Direccion</p>
                 </div>
-                <div class="col-md-3">
-                    <label for="aMat" class="form-label col-form-label-sm">C.U.R.P.</label>
-                    <input type="text" class="form-control form-control-sm" id="aMat">
+                <div class="col-md-10 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <label for="calle" class="form-label col-form-label col-form-label-sm">Calle</label>
+                            <input type="text" class="form-control form-control-sm" id="calle">
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <label for="nExt" class="form-label col-form-label col-form-label-sm">No. Exterior</label>
+                            <input type="text" class="form-control form-control-sm" id="nExt">
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <label for="nInt" class="form-label col-form-label col-form-label-sm">No. Interior</label>
+                            <input type="text" class="form-control form-control-sm" id="nInt">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <label for="cp" class="form-label col-form-label col-form-label-sm">Código Postal</label>
+                            <input type="text" class="form-control form-control-sm" id="cp">
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <label for="colonia" class="form-label col-form-label col-form-label-sm">Colonia</label>
+                            <select name="" id="colonia" class="form-select form-select-sm">
+                                <option value="">Selecciona una Opción</option>
+                                <option value="">Colonia 1</option>
+                                <option value="">Colonia 2</option>
+                                <option value="">Colonia 3</option>
+                            </select>
+                        </div>
+                       
+                        <div class="col-md-4 col-sm-12">
+                            <label for="nInt" class="form-label col-form-label col-form-label-sm">Ciudad / Poblacion</label>
+                            <input type="text" class="form-control form-control-sm" id="nInt">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <label for="aPat" class="form-label col-form-label-sm">Teléfono</label>
-                    <input type="text" class="form-control form-control-sm" id="aPat">
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-2 col-sm-12">
+                    <p>Datos del Asegurado</p>
                 </div>
-                <div class="col-md-3">
-                    <label for="aMat" class="form-label col-form-label-sm">Correo Electrónico</label>
-                    <input type="text" class="form-control form-control-sm" id="aMat">
+                <div class="col-md-10 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <label for="cHab" class="form-label col-form-label col-form-label-sm">Conductor Habitual</label>
+                            <input type="text" class="form-control form-control-sm" id="cHab">
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label for="iFinanc" class="form-label col-form-label col-form-label-sm">Institucion / Filial</label>
+                            <select name="" id="iFinanc" class="form-select form-select-sm">
+                                <option value="">Selecciona una Opción</option>
+                                <option value="">iFinanc 1</option>
+                                <option value="">iFinanc 2</option>
+                                <option value="">iFinanc 3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 col-sm-12">
+                            <label for="cServ" class="form-label col-form-label col-form-label-sm">Userkey</label>
+                            <input type="text" class="form-control form-control-sm" id="cServ">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12">
+                            <label for="cHab" class="form-label col-form-label col-form-label-sm">Placa</label>
+                            <input type="text" class="form-control form-control-sm" id="cHab">
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <label for="nMotor" class="form-label col-form-label col-form-label-sm">Numero de Motor</label>
+                            <input type="text" class="form-control form-control-sm" id="nMotor">
+                        </div>
+                        <div class="col-md-5 col-sm-12">
+                            <label for="cServ" class="form-label col-form-label col-form-label-sm">Color de Coche</label>
+                                <select name="" id="cServ" class="form-select form-select-sm">
+                                    <option value="">Selecciona una Opción</option>
+                                    <option value="">iFinanc 1</option>
+                                    <option value="">iFinanc 2</option>
+                                    <option value="">iFinanc 3</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12">
+                            <label for="fPago" class="form-label col-form-label col-form-label-sm">Forma de Pago</label>
+                            <input type="text" class="form-control form-control-sm" id="fPago">
+                        </div>
+                    </div>
                 </div>
             </div>
             <hr>
         </mat-tab>
-        <mat-tab label="Articulo 492 Persona Fisica">Content 2</mat-tab>
+        
+        <mat-tab label="Articulo 492 Persona Fisica">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <label for="ocup" class="form-label col-form-label col-form-label-sm">Ocupación</label>
+                        <select name="" id="ocup" class="form-select form-select-sm">
+                            <option value="">Selecciona una Opción</option>
+                            <option value="Empleado">Empleado</option>
+                            <option value="Comerciante">Comerciante</option>
+                            <option value="Empresario">Empresario</option>
+                            <option value="Permisionario">Permisionario</option>
+                            <option value="Transportista">Transportista</option>
+                            <option value="Hogar">Hogar</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <label for="pOrig" class="form-label col-form-label col-form-label-sm">País de Origen</label>
+                        <select name="" id="pOrig" class="form-select form-select-sm">
+                            <option value="">Selecciona una Opción</option>
+                            <option value="mexico">México</option>
+                            <option value="extranjero">Extranjero</option>
+                        </select>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <label for="cServ" class="form-label col-form-label col-form-label-sm">Profesión</label>
+                        <select name="" id="cServ" class="form-select form-select-sm">
+                            <option value="">Selecciona una Opción</option>
+                            <option value="Administrador">Administrador</option>
+                            <option value="Abogado">Abogado</option>
+                            <option value="Arquitecto">Arquitecto</option>
+                            <option value="Actuario">Actuario</option>
+                            <option value="Contador">Contador</option>
+                            <option value="Docente">Docente</option>
+                            <option value="Economista">Economista</option>
+                            <option value="Ingeniero">Ingeniero</option>
+                            <option value="Medico">Medico</option>
+                            <option value="Psicologo">Psicologo</option>
+                            <option value="Odontologo">Odontologo</option>
+                            <option value="Químico">Químico</option>
+                            <option value="Biologo">Biologo</option>
+                            <option value="Sociologo">Sociologo</option>
+                            <option value="Periodista">Periodista</option>
+                            <option value="Otro">Otro</option>
+                            <option value="Ninguna">Ninguna</option>
+                        </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <label for="rFiscal" class="form-label col-form-label col-form-label-sm">Régimen Fiscal</label>
+                    <input type="text" class="form-control form-control-sm" id="rFiscal">
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <label for="nMotor" class="form-label col-form-label col-form-label-sm">Número Cert. FIEL</label>
+                    <input type="text" class="form-control form-control-sm" id="nMotor">
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <label for="pOrig" class="form-label col-form-label col-form-label-sm">Tipo de Identificación</label>
+                    <select name="" id="pOrig" class="form-select form-select-sm">
+                        <option value="">Selecciona una Opción</option>
+                        <option value="IFE">IFE</option>
+                        <option value="PASAPORTE">PASAPORTE</option>
+                        <option value="CEDULA PROFESIONAL">CEDULA PROFESIONAL</option>
+                        <option value="CARTILLA DE SERVICIO MILITAR">CARTILLA DE SERVICIO MILITAR</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 col-sm-12">
+                    <label for="pOrig" class="form-label col-form-label col-form-label-sm">Lugar de Nacimiento</label>
+                    <select name="" id="pOrig" class="form-select form-select-sm">
+                        <option value="">Selecciona una Opción</option>
+                        <option value=""></option>
+                        <option value="AGUASCALIENTES">AGUASCALIENTES</option>
+                        <option value="BAJA CALIFORNIA">BAJA CALIFORNIA</option>
+                        <option value="BAJA CALIFORNIA SUR">BAJA CALIFORNIA SUR</option>
+                        <option value="CAMPECHE">CAMPECHE</option>
+                        <option value="COAHUILA">COAHUILA</option>
+                        <option value="COLIMA">COLIMA</option>
+                        <option value="CHIAPAS">CHIAPAS</option>
+                        <option value="CHIHUAHUA">CHIHUAHUA</option>
+                        <option value="DISTRITO FEDERAL">DISTRITO FEDERAL</option>
+                        <option value="DURANGO">DURANGO</option>
+                        <option value="GUANAJUATO">GUANAJUATO</option>
+                        <option value="GUERRERO">GUERRERO</option>
+                        <option value="HIDALGO">HIDALGO</option>
+                        <option value="JALISCO">JALISCO</option>
+                        <option value="MEXICO">MEXICO</option>
+                        <option value="MICHOACAN">MICHOACAN</option>
+                        <option value="MORELOS">MORELOS</option>
+                        <option value="NAYARIT">NAYARIT</option>
+                        <option value="NUEVO LEON">NUEVO LEON</option>
+                        <option value="OAXACA">OAXACA</option>
+                        <option value="PUEBLA">PUEBLA</option>
+                        <option value="QUERETARO">QUERETARO</option>
+                        <option value="QUINTANA ROO">QUINTANA ROO</option>
+                        <option value="SAN LUIS POTOSI">SAN LUIS POTOSI</option>
+                        <option value="SINALOA">SINALOA</option>
+                        <option value="SONORA">SONORA</option>
+                        <option value="TABASCO">TABASCO</option>
+                        <option value="TAMAULIPAS">TAMAULIPAS</option>
+                        <option value="TLAXCALA">TLAXCALA</option>
+                        <option value="VERACRUZ">VERACRUZ</option>
+                        <option value="YUCATAN">YUCATAN</option>
+                        <option value="ZACATECAS">ZACATECAS</option>
+                        <option value="NACIDO EN EL EXTRANJERO">NACIDO EN EL EXTRANJERO</option>
+                    </select>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <label for="rFiscal" class="form-label col-form-label col-form-label-sm">Segundo Correo</label>
+                    <input type="text" class="form-control form-control-sm" id="rFiscal">
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <label for="nMotor" class="form-label col-form-label col-form-label-sm">Otros Teléfonos</label>
+                    <input type="text" class="form-control form-control-sm" id="nMotor">
+                </div>
+            </div>
+        </mat-tab>
     </mat-tab-group>
 </form>

@@ -15,6 +15,11 @@
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
 }
+p{
+  color: var(--color-4);
+  font-size: medium;
+  font-weight: 500;
+}
 .sidebar{
   position: fixed;
   left: 0;
@@ -287,7 +292,7 @@
     border-radius: 10px;
 }
 .col-form-label{
-    font-weight: 500;
+    // font-weight: 500;
     color: #0094ac;
 
 }
